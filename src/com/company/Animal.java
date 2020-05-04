@@ -42,6 +42,9 @@ public class Animal {
             System.out.println("You cannot walk with dead dog you bastard!");
         }
     }
+    public String toString() {
+        return this.species + " " + this.name;
+    }
 
 
 }

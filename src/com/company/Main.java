@@ -1,5 +1,6 @@
 package com.company;
 
+import com.company.devices.Car;
 public class Main {
 
 
@@ -54,6 +55,13 @@ public class Main {
 
         System.out.println("I earn " + me.getSalary());
         me.setSalary(1000.0);
+
+        System.out.println(dog);
+        System.out.println(me);
+        System.out.println(uno);
+
+
+
 
 
         
