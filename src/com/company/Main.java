@@ -40,7 +40,15 @@ public class Main {
         me.pet.takeForWalk();
         me.pet.takeForWalk();
         me.pet.takeForWalk();
-        
+        me.Car = new Car("Uno", "Fiat", "White");
+
+
+
+
+
+
+
+
 
 
 
