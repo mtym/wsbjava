@@ -23,7 +23,30 @@ public class Main {
         me.pet.name = "Myszojeleń";
 
         me.pet.feed();
+        me.pet.feed();
+        me.pet.feed();
+        me.pet.feed();
+        me.pet.feed();
+        me.pet.feed();
+        me.pet.feed();
+        me.pet.takeForWalk();
+        me.pet.takeForWalk();
+        me.pet.takeForWalk();
+        me.pet.takeForWalk();
+        me.pet.takeForWalk();
+        me.pet.takeForWalk();
+        me.pet.takeForWalk();
+        me.pet.takeForWalk();
+        me.pet.takeForWalk();
+        me.pet.takeForWalk();
+        me.pet.takeForWalk();
+        
 
-        System.out.println(me.pet.species);
+
+
+
+
+
+
     }
 }
