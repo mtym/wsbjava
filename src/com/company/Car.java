@@ -11,6 +11,11 @@ public class Car {
           this.color = color;
 
      }
+     public Double value;
+
+     {
+          value = 50000.0;
+     }
 
 
 }

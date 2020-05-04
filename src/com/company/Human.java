@@ -1,11 +1,12 @@
 package com.company;
 
 public class Human {
+    public Car setCar;
     String firstName;
     String lastName;
     Phone phone;
     Animal pet;
-    Car Car;
+    private  Car Car;
 
     private Double salary = 1000.0;
 
@@ -28,6 +29,24 @@ public class Human {
             this.salary = salary;
         }
     }
+
+
+    public Car getCar() {
+        return Car;
+    }
+
+    public void setCar(Car Car) {
+        if(Car.value <= this.salary){
+            System.out.println("Great, you bought car by cash");
+            this.Car = Car;
+        } else if (Car.value <= this.salary * 12){
+            System.out.println("Not so great, you bought car on credit");
+            this.Car = Car;
+        }else {
+            System.out.println("Sorry, find cheaper car");
+        }
+    }
+
         }
 
 
