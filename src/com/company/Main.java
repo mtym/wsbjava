@@ -31,23 +31,9 @@ public class Main {
         me.pet.name = "Myszojeleń";
 
         me.pet.feed();
-        me.pet.feed();
-        me.pet.feed();
-        me.pet.feed();
-        me.pet.feed();
-        me.pet.feed();
-        me.pet.feed();
         me.pet.takeForWalk();
-        me.pet.takeForWalk();
-        me.pet.takeForWalk();
-        me.pet.takeForWalk();
-        me.pet.takeForWalk();
-        me.pet.takeForWalk();
-        me.pet.takeForWalk();
-        me.pet.takeForWalk();
-        me.pet.takeForWalk();
-        me.pet.takeForWalk();
-        me.pet.takeForWalk();
+
+
 
 
         me.setCar = new Car("Uno", "Fiat", "White");

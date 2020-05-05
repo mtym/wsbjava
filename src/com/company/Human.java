@@ -43,7 +43,7 @@ public class Human {
             System.out.println("You bought a car");
             this.Car = Car;
         } else if (Car.value <= this.salary * 12){
-            System.out.println("Yuo will pay for car credit for next 10 years");
+            System.out.println("You will pay for car credit for next 10 years");
             this.Car = Car;
         }else {
             System.out.println("Sorry, go to better work and earn more money ");

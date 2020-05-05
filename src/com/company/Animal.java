@@ -25,7 +25,7 @@ public class Animal {
     }
 
 
-    void feed() {
+    void feed () {
         if (weight<=0.0){
             System.out.println("Sorry bro, dead pet cannot eat");
         }
