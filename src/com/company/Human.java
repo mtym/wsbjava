@@ -40,13 +40,13 @@ public class Human {
 
     public void setCar(Car Car) {
         if(Car.value <= this.salary){
-            System.out.println("Great, you bought car by cash");
+            System.out.println("You bought a car");
             this.Car = Car;
         } else if (Car.value <= this.salary * 12){
-            System.out.println("Not so great, you bought car on credit");
+            System.out.println("Yuo will pay for car credit for next 10 years");
             this.Car = Car;
         }else {
-            System.out.println("Sorry, find cheaper car");
+            System.out.println("Sorry, go to better work and earn more money ");
         }
     }
 
