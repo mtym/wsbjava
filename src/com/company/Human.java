@@ -4,7 +4,6 @@ import com.company.devices.Car;
 import com.company.devices.Phone;
 
 public class Human {
-    public Car setCar;
     String firstName;
     String lastName;
     Phone phone;

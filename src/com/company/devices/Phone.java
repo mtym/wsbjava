@@ -1,13 +1,14 @@
 package com.company.devices;
 
-public class Phone {
-    String producer;
-    String model;
-    Double screenSize;
+public class Phone extends Device {
+    public Phone(String producer, String model, Integer yearOfProduction) {
+        super(producer, model, yearOfProduction);
+    }
 
 
-    public String toString() {
-        return "Phone " + this.producer + " " + this.model + " " + this.screenSize;
+    @Override
+    public void turnON() {
+        System.out.println("Welcome to iOS");
     }
 }
 

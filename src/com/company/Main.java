@@ -1,6 +1,8 @@
 package com.company;
 
 import com.company.devices.Car;
+import com.company.devices.Phone;
+
 public class Main {
 
 
@@ -12,17 +14,26 @@ public class Main {
 
         System.out.println("Hi, I'm " + dog.name);
 
-        dog.feed();
-
-        Car uno = new Car("Uno", "Fiat", "White");
 
         Human me = new Human();
         me.firstName = "Maciej";
         me.lastName = "Nowak";
         me.pet = dog;
-        me.setCar(uno);
 
-        
+
+
+
+        dog.feed();
+        me.pet.feed();
+        me.pet.takeForWalk();
+
+        Car uno = new Car("Uno", "Fiat", 1999,1.2 );
+        Phone phone = new Phone ("Apple", "Iphone 7", 2019);
+        uno.color = "White";
+
+
+
+
 
         me.pet.feed();
         System.out.println(me.pet.species);
@@ -30,21 +41,40 @@ public class Main {
         me.pet = new Animal("Cat");
         me.pet.name = "Myszojeleń";
 
-        me.pet.feed();
-        me.pet.takeForWalk();
 
 
 
 
-        me.setCar = new Car("Uno", "Fiat", "White");
+
+
+
+
+
+       ;
+
+       System.out.println(new Car("Uno", "Fiat", 1999, 1.2));
 
 
         System.out.println("I earn " + me.getSalary());
         me.setSalary(1000.0);
+        me.setCar(uno);
 
         System.out.println(dog);
         System.out.println(me);
         System.out.println(uno);
+        uno.turnON();
+
+        phone.turnON();
+        System.out.println(new Phone("Apple", "Iphone 7", 2019 ));
+
+
+
+
+
+
+
+
+
 
 
 

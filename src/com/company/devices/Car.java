@@ -1,24 +1,36 @@
 package com.company.devices;
 
-public class Car {
-     final String model;
-     final String producer;
-     String  color;
 
-     public Car(String model, String producer, String color) {
-          this.model = model;
-          this.producer = producer;
-          this.color = color;
+public class Car extends Device {
+
+     public final Double engineVolume;
+     public String color;
+
+
+     public Car(String model, String producer, Integer yearOfProduction, Double engineVolume) {
+          super(model, producer, yearOfProduction);
+          this.engineVolume = engineVolume;
+
 
      }
-     public Double value;
 
-     {
-          value = 50000.0;
+
+
+
+     public String toString() {
+          return "Car " + super.toString() + " " + this.color;
      }
-    	    public String toString() {
-                 return "Car " + this.producer + " " + this.model + " " + this.color;
-            }
+
+     @Override
+     public void turnON() {
+          System.out.println("Engine started");
+
+     }
+
+
+
+
+
 
 
 
