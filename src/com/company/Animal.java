@@ -9,7 +9,7 @@ public class Animal {
     private Double weight;
 
 
-    static final Double DEFAULT_DOG_WEIGHT = 30.0;
+    static final Double DEFAULT_DOG_WEIGHT = 25.0;
     static final Double DEFAULT_CAT_WEIGHT = 3.0;
     static final Double DEFAULT_OTHER_WEIGHT = 1.0;
 

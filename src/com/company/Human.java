@@ -10,7 +10,7 @@ public class Human {
     Animal pet;
     private Car Car;
 
-    private Double salary = 1000.0;
+    private Double salary = 5000.0;
 
 
 

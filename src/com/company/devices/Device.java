@@ -5,7 +5,7 @@ public abstract class Device {
     public final String producer;
     public final String model;
     public final Integer yearOfProduction;
-    public Double value = 5000.0;
+    public Double value = 4000.0;
 
 
 

@@ -8,7 +8,7 @@ public class Phone extends Device {
 
     @Override
     public void turnON() {
-        System.out.println("Welcome to iOS");
+        System.out.println("Hello");
     }
 }
 

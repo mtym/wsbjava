@@ -53,7 +53,7 @@ public class Main {
 
        ;
 
-       System.out.println(new Car("Uno", "Fiat", 1999, 1.2));
+       System.out.println(new Car("Uno", "Fiat", 1989, 1.2));
 
 
         System.out.println("I earn " + me.getSalary());
@@ -66,7 +66,7 @@ public class Main {
         uno.turnON();
 
         phone.turnON();
-        System.out.println(new Phone("Apple", "Iphone 7", 2019 ));
+        System.out.println(new Phone("Apple", "Iphone 7", 2018 ));
 
 
 
