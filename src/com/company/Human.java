@@ -3,14 +3,36 @@ package com.company;
 import com.company.devices.Car;
 import com.company.devices.Phone;
 
-public class Human {
+
+public class Human{
     String firstName;
     String lastName;
-    Phone phone;
+    public Phone phone;
     Animal pet;
-    private Car Car;
-
+    public Car Car;
     private Double salary = 5000.0;
+    public Double cash = 100.0;
+
+    public Human(String firstName, String lastName, Double salary) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.salary = salary;
+    }
+
+
+
+
+
+    public String getFirstName() {
+        return firstName;
+    }
+    public String getLastName() {
+        return  lastName;
+    }
+    public void setLastName() {
+        this.lastName = lastName;
+    }
+
 
 
 
@@ -49,9 +71,14 @@ public class Human {
         }
     }
 
+    public void sell() throws Exception {
+        throw new Exception("Human trafficking is prohibited");
+    }
+
     public String toString(){
         return this.firstName + " " + this.lastName;
     }
+
 	}
 
 

@@ -2,7 +2,7 @@ package com.company;
 
 import java.io.File;
 
-public class Animal {
+public class Animal implements Saleable {
     final String species;
     String name;
     File pic;
@@ -47,4 +47,24 @@ public class Animal {
     }
 
 
+    @Override
+    public void sell(Human seller, Human buyer, Double price) throws Exception {
+        if (buyer.cash < price) {
+            throw new Exception("Go earn money");
+        }
+        if(seller.pet != this){
+            throw new Exception(("You can't sell" + this.toString()));
+        } else {
+            buyer.cash -= price;
+            seller.cash += price;
+            buyer.pet = this;
+            seller.pet = null;
+            System.out.println("Successful transaction");
+
+        }
+
+    }
 }
+
+
+

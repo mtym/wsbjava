@@ -1,7 +1,10 @@
 package com.company.devices;
 
 
-public class Car extends Device {
+import com.company.Human;
+import com.company.Saleable;
+
+public class Car extends Device implements Saleable {
 
      public final Double engineVolume;
      public String color;
@@ -15,8 +18,6 @@ public class Car extends Device {
      }
 
 
-
-
      public String toString() {
           return "Car " + super.toString() + " " + this.color;
      }
@@ -27,11 +28,22 @@ public class Car extends Device {
 
      }
 
+     @Override
+     public void sell(Human seller, Human buyer, Double price) throws Exception {
+          if (buyer.cash < price) {
+               throw new Exception("Go earn money");
+          }
+          if(seller.getCar() != this){
+               throw new Exception(("You can't sell" + this.toString()));
+          } else {
+               buyer.cash -= price;
+               seller.cash += price;
+               buyer.setCar(this);
+               seller.setCar(null);
+               System.out.println("Successful transaction");
+
+          }
 
 
-
-
-
-
-
+     }
 }

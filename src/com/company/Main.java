@@ -15,43 +15,30 @@ public class Main {
         System.out.println("Hi, I'm " + dog.name);
 
 
-        Human me = new Human();
-        me.firstName = "Maciej";
-        me.lastName = "Nowak";
-        me.pet = dog;
+        Human me = new Human("Maciej", "Nowak", 5000.00);
+
+
+        me.pet = new Animal("cat");
+        me.pet.name = "Jelen";
 
 
 
 
-        dog.feed();
-        me.pet.feed();
-        me.pet.takeForWalk();
 
         Car uno = new Car("Uno", "Fiat", 1999,1.2 );
         Phone phone = new Phone ("Apple", "Iphone 7", 2019);
         uno.color = "White";
 
+        me.setCar(uno);
+
+        Human myBrother = new Human("Bartek", "Nowak", 4500.00);
+        myBrother.setCar(uno);
+
+        System.out.println(me.getCar());
+        System.out.println(myBrother.getCar());
 
 
 
-
-
-        me.pet.feed();
-        System.out.println(me.pet.species);
-
-        me.pet = new Animal("Cat");
-        me.pet.name = "Myszojeleń";
-
-
-
-
-
-
-
-
-
-
-       ;
 
        System.out.println(new Car("Uno", "Fiat", 1989, 1.2));
 
@@ -63,34 +50,27 @@ public class Main {
         System.out.println(dog);
         System.out.println(me);
         System.out.println(uno);
+        System.out.println(myBrother);
+
+
+
         uno.turnON();
 
         phone.turnON();
         System.out.println(new Phone("Apple", "Iphone 7", 2018 ));
 
+        try {
+            me.pet.sell(myBrother, me,500.00);
 
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        try{
+            me.Car.sell(me, myBrother, 100.00);
 
-
-
-
-
-
-
-
-
-
-
-
-        
-
-
-
-
-
-
-
-
-
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
 
 
