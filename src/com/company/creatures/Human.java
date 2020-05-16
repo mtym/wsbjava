@@ -1,17 +1,19 @@
-package com.company;
+package com.company.creatures;
 
+import com.company.creatures.Animal;
 import com.company.devices.Car;
 import com.company.devices.Phone;
 
 
-public class Human{
+public class Human {
     String firstName;
     String lastName;
     public Phone phone;
-    Animal pet;
+    public Animal pet;
     public Car Car;
     private Double salary = 5000.0;
     public Double cash = 100.0;
+    private Double weight;
 
     public Human(String firstName, String lastName, Double salary) {
         this.firstName = firstName;
@@ -19,22 +21,17 @@ public class Human{
         this.salary = salary;
     }
 
-
-
-
-
     public String getFirstName() {
         return firstName;
     }
+
     public String getLastName() {
-        return  lastName;
+        return lastName;
     }
+
     public void setLastName() {
         this.lastName = lastName;
     }
-
-
-
 
 
     public Double getSalary() {
@@ -60,13 +57,13 @@ public class Human{
     }
 
     public void setCar(Car Car) {
-        if(Car.value <= this.salary){
+        if (Car.value <= this.salary) {
             System.out.println("You bought a car");
             this.Car = Car;
-        } else if (Car.value <= this.salary * 12){
+        } else if (Car.value <= this.salary * 12) {
             System.out.println("You will pay for car credit for next 10 years");
             this.Car = Car;
-        }else {
+        } else {
             System.out.println("Sorry, go to better work and earn more money ");
         }
     }
@@ -75,11 +72,22 @@ public class Human{
         throw new Exception("Human trafficking is prohibited");
     }
 
-    public String toString(){
+    public String toString() {
         return this.firstName + " " + this.lastName;
     }
+    public void feed() {
+        System.out.println("dziena");
+    }
 
-	}
+    public void feed(Double foodWeight) {
+        this.weight += foodWeight;
+        if (foodWeight > 1.0) {
+            System.out.println("nie przeginasz?");
+        } else {
+            System.out.println("dzięki, dzięki, a masz jeszcze?");
+        }
+    }
+}
 
 
 

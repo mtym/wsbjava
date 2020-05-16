@@ -1,5 +1,9 @@
 package com.company;
 
+import com.company.creatures.Animal;
+import com.company.creatures.FarmAnimal;
+import com.company.creatures.Human;
+import com.company.creatures.Pet;
 import com.company.devices.Car;
 import com.company.devices.Phone;
 
@@ -9,8 +13,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Animal dog = new Animal("Dog");
+        Animal dog = new Pet("Dog");
         dog.name = "Tunia";
+
+        dog.Feed();
 
         System.out.println("Hi, I'm " + dog.name);
 
@@ -18,8 +24,9 @@ public class Main {
         Human me = new Human("Maciej", "Nowak", 5000.00);
 
 
-        me.pet = new Animal("cat");
-        me.pet.name = "Jelen";
+        Pet Jasiu = new Pet("cat");
+        Pet Molly = new Pet("Hamster");
+
 
 
 
@@ -59,19 +66,18 @@ public class Main {
         phone.turnON();
         System.out.println(new Phone("Apple", "Iphone 7", 2018 ));
 
+
+
+        Molly.Feed();
+        Molly.Feed(30.00);
+
+        FarmAnimal boar = new FarmAnimal("boar");
+
         try {
-            me.pet.sell(myBrother, me,500.00);
-
+            boar.beEaten();
         } catch (Exception e) {
             e.printStackTrace();
         }
-        try{
-            me.Car.sell(me, myBrother, 100.00);
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
 
 
 

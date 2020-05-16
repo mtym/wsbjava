@@ -1,17 +1,21 @@
-package com.company;
+package com.company.creatures;
+
+import com.company.Saleable;
 
 import java.io.File;
 
-public class Animal implements Saleable {
+public abstract class Animal implements Saleable,Feedable {
     final String species;
-    String name;
+    public String name;
     File pic;
-    private Double weight;
+    protected Double weight;
 
 
     static final Double DEFAULT_DOG_WEIGHT = 25.0;
     static final Double DEFAULT_CAT_WEIGHT = 3.0;
     static final Double DEFAULT_OTHER_WEIGHT = 1.0;
+
+
 
     public Animal(String species) {
         this.species = species;
@@ -24,8 +28,8 @@ public class Animal implements Saleable {
         }
     }
 
-
-    void feed () {
+    @Override
+    public void Feed (Double foodWeight) {
         if (weight<=0.0){
             System.out.println("Sorry bro, dead pet cannot eat");
         }
@@ -39,7 +43,7 @@ public class Animal implements Saleable {
             weight--;
             System.out.println("My new weight" + weight);
         } else {
-            System.out.println("You cannot walk with dead dog you bastard!");
+            System.out.println("You cannot walk with dead animal you bastard!");
         }
     }
     public String toString() {
@@ -64,6 +68,10 @@ public class Animal implements Saleable {
         }
 
     }
+
+
+    public abstract void beEaten() throws Exception;
+
 }
 
 
