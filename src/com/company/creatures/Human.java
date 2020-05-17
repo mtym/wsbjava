@@ -82,7 +82,7 @@ public class Human {
     public void feed(Double foodWeight) {
         this.weight += foodWeight;
         if (foodWeight > 1.0) {
-            System.out.println("nie przeginasz?");
+            System.out.println("nie ?");
         } else {
             System.out.println("dzięki, dzięki, a masz jeszcze?");
         }

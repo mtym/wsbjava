@@ -3,16 +3,19 @@ package com.company.devices;
 
 import com.company.creatures.Human;
 import com.company.Saleable;
+import sun.awt.SunHints;
 
-public class Car extends Device implements Saleable {
+public abstract class Car extends Device implements Saleable {
 
-     public final Double engineVolume;
+     public  Double Value;
      public String color;
 
 
-     public Car(String model, String producer, Integer yearOfProduction, Double engineVolume) {
+     public Car(String model, String producer, Integer yearOfProduction,Double Value) {
           super(model, producer, yearOfProduction);
-          this.engineVolume = engineVolume;
+          this.value = Value;
+
+
 
 
      }
@@ -46,4 +49,5 @@ public class Car extends Device implements Saleable {
 
 
      }
+     abstract public void refuel();
 }

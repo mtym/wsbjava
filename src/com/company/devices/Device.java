@@ -4,9 +4,9 @@ import com.company.Saleable;
 
 public abstract class Device implements Saleable {
 
-    public final String producer;
-    public final String model;
-    public final Integer yearOfProduction;
+    public String producer;
+    public String model;
+    public Integer yearOfProduction;
     public Double value = 4000.0;
 
 
