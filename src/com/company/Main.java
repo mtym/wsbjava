@@ -21,14 +21,35 @@ public class Main {
 
             System.out.println("Hi, I'm " + dog.name);
 
-
             Human me = new Human("Maciej", "Nowak", 5000.00);
+            Human myWife = new Human("Julia", "Nowak", 4000.0);
+            Human myBrother = new Human("Bartek", "Nowak", 4500.00);
+            myWife.setSalary(2500.00);
+            me.setSalary(3000.00);
+            myBrother.setSalary(5000.00);
+            myWife.phone = new Phone("Samsung","A51",2011);
+            myBrother.phone = new Phone("Xiaomi","XYZ",2015);
+            me.phone = new Phone("Apple","XS",2019);
+
+
+
+
 
 
             Pet Jasiu = new Pet("cat");
             Pet Molly = new Pet("Hamster");
 
             Phone iphone = new Phone("Apple","8",2007);
+
+
+            /*  try {
+                me.phone.sell(me,myWife,10.00);
+               }    catch (Exception e) {
+                e.printStackTrace();
+            } */
+
+
+
 
 
 
@@ -42,11 +63,11 @@ public class Main {
 
           //  me.setCar(uno);
 
-            Human myBrother = new Human("Bartek", "Nowak", 4500.00);
+
            // myBrother.setCar(uno);
 
-            System.out.println(me.getCar());
-            System.out.println(myBrother.getCar());
+           // System.out.println(me.getCar());
+           // System.out.println(myBrother.getCar());
 
 
 
@@ -55,17 +76,20 @@ public class Main {
 
 
             System.out.println("I earn " + me.getSalary());
-            me.setSalary(1000.0);
-        //    me.setCar(uno);
+           // me.setSalary(1000.0);
+            // me.setCar(uno);
 
             System.out.println(dog);
             System.out.println(me);
-        //    System.out.println(uno);
+           // System.out.println(uno);
             System.out.println(myBrother);
 
+            System.out.println(me.cash);
 
 
-         //   uno.turnON();
+
+
+         //  uno.turnON();
 
             phone.turnON();
             System.out.println(new Phone("Apple", "Iphone 7", 2018 ));
@@ -92,21 +116,30 @@ public class Main {
 
             try {
                 iphone.installAnApp("mBank");
-                iphone.installAnApp("kalkulator","1.1.1");
-                String[] appNames = {"flight simulator", "facebook"};
+                iphone.installAnApp("Calculator","1.1.1");
+                String[] appNames = {"Flight simulator", "Facebook",};
                 iphone.installAnApp(appNames);
             } catch (MalformedURLException e) {
                 e.printStackTrace();
             }
 
         Electric EcoCar = new Electric("Model S","Tesla",2019, 54.25);
-        LPG LPGCar = new LPG("Golf", "Volksvagen",1999, 28.00);
+        LPG LPGCar = new LPG("Golf", "Volkswagen",1999, 28.00);
         Diesel DieselCar = new Diesel("Touareg", "Volkswagen",2015,30000.00);
+
+
+
+
 
 
         EcoCar.refuel();
         LPGCar.refuel();
         DieselCar.refuel();
+
+
+
+
+
 
 
 

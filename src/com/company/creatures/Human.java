@@ -1,5 +1,6 @@
 package com.company.creatures;
 
+import com.company.Saleable;
 import com.company.creatures.Animal;
 import com.company.devices.Car;
 import com.company.devices.Phone;
@@ -12,7 +13,7 @@ public class Human {
     public Animal pet;
     public Car Car;
     private Double salary = 5000.0;
-    public Double cash = 100.0;
+    public Double cash = 1000.0;
     private Double weight;
 
     public Human(String firstName, String lastName, Double salary) {
@@ -43,11 +44,11 @@ public class Human {
         if (salary < 0) {
             System.out.println("sorry, I don't work for free");
         } else {
-            System.out.println("Your salary is now: " + salary);
-            System.out.println("Data was sent to accounting system");
-            System.out.println("Go to mrs Hania for annex to contract");
-            System.out.println("Don't hide your salary - ZUS and US know about your new salary");
-            this.salary = salary;
+         //   System.out.println("Your salary is now: " + salary);
+          //  System.out.println("Data was sent to accounting system");
+          //  System.out.println("Go to mrs Hania for annex to contract");
+           // System.out.println("Don't hide your salary - ZUS and US know about your new salary");
+           // this.salary = salary;
         }
     }
 
