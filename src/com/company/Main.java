@@ -6,6 +6,7 @@ import com.company.creatures.Human;
 import com.company.creatures.Pet;
 import com.company.devices.*;
 
+
 import java.net.MalformedURLException;
 
 public class Main {
@@ -34,6 +35,26 @@ public class Main {
             myBrother.phone = new Phone("Xiaomi","XYZ",2015);
             me.phone = new Phone("Apple","XS",2019);
 
+
+            Phone szajomi = new Phone("Xiaomi", "xxlxxs",2021);
+
+            myBrother.phone = szajomi;
+            Application fejsbuk = new Application("fejsbuk","1.0",15);
+            Application livescore = new Application("livescore","2.0",20);
+            Application twitch = new Application("twitch", "3.0",10);
+            Application gmail = new Application("gmail","1.2",5);
+
+            myBrother.phone.installAnApp(fejsbuk,myBrother);
+            myBrother.phone.installAnApp(livescore, myBrother);
+            myBrother.phone.installAnApp(twitch, myBrother);
+
+            myBrother.phone.AppsByName();
+            myBrother.phone.AppsByPrice();
+            myBrother.phone.appsValue();
+            myBrother.phone.FreeApps();
+            myBrother.phone.checkIfAppIsInstalled(twitch);
+            myBrother.phone.checkIfAppIsInstalled(fejsbuk);
+            myBrother.phone.checkIfAppIsInstalled(gmail);
 
 
 
