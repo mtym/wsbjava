@@ -18,6 +18,9 @@ public abstract class Device implements Saleable {
         this.yearOfProduction = yearOfProduction;
 
     }
+     public String getYearOfProduction() {
+        return getYearOfProduction();
+     }
 
 
 

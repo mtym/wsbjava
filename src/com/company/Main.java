@@ -22,14 +22,20 @@ public class Main {
             System.out.println("Hi, I'm " + dog.name);
 
             Human me = new Human("Maciej", "Nowak", 5000.00);
+            me.cash = 5000;
+
             Human myWife = new Human("Julia", "Nowak", 4000.0);
             Human myBrother = new Human("Bartek", "Nowak", 4500.00);
             myWife.setSalary(2500.00);
+            myWife.cash = 6000;
             me.setSalary(3000.00);
             myBrother.setSalary(5000.00);
             myWife.phone = new Phone("Samsung","A51",2011);
             myBrother.phone = new Phone("Xiaomi","XYZ",2015);
             me.phone = new Phone("Apple","XS",2019);
+
+
+
 
 
 
@@ -126,6 +132,20 @@ public class Main {
         Electric EcoCar = new Electric("Model S","Tesla",2019, 54.25);
         LPG LPGCar = new LPG("Golf", "Volkswagen",1999, 28.00);
         Diesel DieselCar = new Diesel("Touareg", "Volkswagen",2015,30000.00);
+
+        me.PrintAllCars();
+        me.SortCarsByYearOfProduction();
+
+        me.PrintAllCars();
+
+        me.getCar(0).sell(me,myWife,400);
+
+        System.out.println("me cars:");
+        me.PrintAllCars();
+        System.out.println("myWife cars:");
+        myWife.PrintAllCars();
+
+        myWife.SortCarsByYearOfProduction();
 
 
 
