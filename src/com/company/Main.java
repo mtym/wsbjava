@@ -140,12 +140,19 @@ public class Main {
 
         me.getCar(0).sell(me,myWife,400);
 
+
+
         System.out.println("me cars:");
         me.PrintAllCars();
         System.out.println("myWife cars:");
         myWife.PrintAllCars();
 
         myWife.SortCarsByYearOfProduction();
+        System.out.println(myWife.getCar(1));
+        myWife.getCar(2).CountTransactions();
+
+
+        myWife.getCar(1).TransactionHIstory(myWife,me);
 
 
 
